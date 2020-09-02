@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Question 2</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var arr=[0,0,1,1,0,0,0,1,0,0,1,1,1,1,0];
+		var len = arr.length;
+		var count=0;
+		var x=0;
+	    for (var i = 0; i < len; i++) { 
+         
+        if (arr[i] == 0) 
+            count=0;
+        else{ 
+            count++;
+            if(x<count)
+            	x=count; 
+        } 
+    }
+
+	console.log(x);
+	</script>
+</body>
+</html>

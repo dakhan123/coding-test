@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Question 4</title>
+</head>
+<body>
+	<form name="myForm"  onsubmit="return(validate())">
+		<input type="text" name="firstname" placeholder="First Name" required>
+		<input type="checkbox" name="checkme" required>
+		<input type="submit" value="Submit">
+	</form>
+
+	<script type="text/javascript">
+		function validate(){
+			if(document.myForm.firstname.value==""){
+				alert("Please enter a name");
+				return false;
+			}
+			if(document.myForm.checkme.checked==false){
+				alert("Please Check the box");
+				return false;
+			}
+			return true;
+		}
+	</script>
+
+</body>
+</html>
